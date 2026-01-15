@@ -1,0 +1,100 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.datos input{
+    
+    width: 300px;
+    align-items: center;
+}
+
+.datos button {
+    margin: 5px;
+    height: 50px;
+    width: 200px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+
+.card-group {
+    display: block; /* Bootstrap row ya maneja el flex, no necesitamos forzarlo aquí */
+    margin-top: 20px;
+}
+
+.card-body {
+    padding: 10px;
+    flex: 1 1 auto;
+    display: block;
+    flex-direction: column;
+    justify-content: flex-start;
+    /*height: 375px;*/
+    height: 250px;
+}
+
+.input-group {
+    margin-top: 10px;
+    margin-bottom: 15px !important;
+}
+
+.mb-3 {
+    margin-top: 15px;
+}
+
+
+.table-striped {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+
+/* Ajuste de las tarjetas de registro */
+.registro-usuarios, 
+.registro-marca, 
+.registro-producto {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Deja que la columna de Bootstrap controle el ancho */
+    max-width: 400px; /* Un ancho máximo para que no se vean gigantes en pantallas grandes */
+    margin-top: 20px;
+}
+
+.registro-usuarios .card,
+.registro-marca .card,
+.registro-producto .card {
+    /* height: 100%; /* Permite que crezcan igual si están en un contenedor flex */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Asegurar que las cards ocupen el ancho de su contenedor */
+.card {
+    width: 100%;
+}
+
+/* Centrado para el usuario común */
+.row.justify-content-center {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-footer {
+    height: 70px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,.03);
+}
